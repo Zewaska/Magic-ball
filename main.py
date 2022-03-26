@@ -16,9 +16,9 @@ print(f'Привет, {name}!\n')
 
 while True:
     question = input(f'{name} задай вопрос: ')
-    print(choice(answers))
+    print(choice(answers))    # Print random answer in answers
     yes = input('\nЕсли хочешь продолжить введи Да(Д) или Yes(Y): ')
-    if yes.lower() in ('да', 'д', 'yes', 'y'):
+    if yes.lower() in ('да', 'д', 'yes', 'y'):    # Check input information in parament 'yes'
         continue
     else:
         break
